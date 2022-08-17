@@ -8,9 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView {
+            ZStack {
+                VStack {
+                    NavigationLink {
+                        SettingView()
+                    } label: {
+                        Text("Setting")
+                    }
+                    .padding()
+                    NavigationLink {
+                        SearchView()
+                    } label: {
+                        Text("Search")
+                    }
+                    .padding()
+                }
+            }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationViewStyle(.automatic)
+        }
+        
     }
 }
 
