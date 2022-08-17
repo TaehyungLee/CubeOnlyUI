@@ -14,6 +14,9 @@
 		C13A853D28ACB9DC00484B66 /* CubeOnlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A853C28ACB9DC00484B66 /* CubeOnlyUITests.swift */; };
 		C13A854728ACB9DC00484B66 /* CubeOnlyUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A854628ACB9DC00484B66 /* CubeOnlyUIUITests.swift */; };
 		C13A854928ACB9DC00484B66 /* CubeOnlyUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A854828ACB9DC00484B66 /* CubeOnlyUIUITestsLaunchTests.swift */; };
+		C13A855628ACBA2A00484B66 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855528ACBA2A00484B66 /* SettingView.swift */; };
+		C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855728ACBA3900484B66 /* CheckMenuView.swift */; };
+		C13A855A28ACBA3900484B66 /* SelectMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855828ACBA3900484B66 /* SelectMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		C13A854228ACB9DC00484B66 /* CubeOnlyUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeOnlyUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13A854628ACB9DC00484B66 /* CubeOnlyUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeOnlyUIUITests.swift; sourceTree = "<group>"; };
 		C13A854828ACB9DC00484B66 /* CubeOnlyUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeOnlyUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C13A855528ACBA2A00484B66 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C13A855728ACBA3900484B66 /* CheckMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMenuView.swift; sourceTree = "<group>"; };
+		C13A855828ACBA3900484B66 /* SelectMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				C13A852B28ACB9DB00484B66 /* CubeOnlyUIApp.swift */,
 				C13A852D28ACB9DB00484B66 /* ContentView.swift */,
+				C13A855528ACBA2A00484B66 /* SettingView.swift */,
+				C13A855728ACBA3900484B66 /* CheckMenuView.swift */,
+				C13A855828ACBA3900484B66 /* SelectMenuView.swift */,
 				C13A852F28ACB9DC00484B66 /* Assets.xcassets */,
 				C13A853128ACB9DC00484B66 /* Preview Content */,
 			);
@@ -257,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */,
+				C13A855628ACBA2A00484B66 /* SettingView.swift in Sources */,
+				C13A855A28ACBA3900484B66 /* SelectMenuView.swift in Sources */,
 				C13A852E28ACB9DB00484B66 /* ContentView.swift in Sources */,
 				C13A852C28ACB9DB00484B66 /* CubeOnlyUIApp.swift in Sources */,
 			);
