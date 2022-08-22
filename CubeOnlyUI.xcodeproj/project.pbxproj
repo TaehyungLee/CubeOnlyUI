@@ -19,6 +19,13 @@
 		C13A855A28ACBA3900484B66 /* SelectMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855828ACBA3900484B66 /* SelectMenuView.swift */; };
 		C13A855C28ACC0FF00484B66 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855B28ACC0FF00484B66 /* SearchView.swift */; };
 		C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855D28ACC67900484B66 /* SettingViewModel.swift */; };
+		C13A856028ACE90500484B66 /* AddChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855F28ACE90500484B66 /* AddChannelView.swift */; };
+		C1F1A46628B3192800AA8040 /* ServiceCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46528B3192700AA8040 /* ServiceCenterView.swift */; };
+		C1F1A46828B332D400AA8040 /* ServiceCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46728B332D400AA8040 /* ServiceCenterModel.swift */; };
+		C1F1A46A28B3345A00AA8040 /* BottomMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46928B3345A00AA8040 /* BottomMenuItemView.swift */; };
+		C1F1A46C28B34E7400AA8040 /* BottomMenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46B28B34E7400AA8040 /* BottomMenuItemModel.swift */; };
+		C1F1A46E28B3563A00AA8040 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46D28B3563A00AA8040 /* BottomMenuView.swift */; };
+		C1F1A47028B359FF00AA8040 /* BottomMenuToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46F28B359FF00AA8040 /* BottomMenuToggleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,13 @@
 		C13A855828ACBA3900484B66 /* SelectMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMenuView.swift; sourceTree = "<group>"; };
 		C13A855B28ACC0FF00484B66 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C13A855D28ACC67900484B66 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		C13A855F28ACE90500484B66 /* AddChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelView.swift; sourceTree = "<group>"; };
+		C1F1A46528B3192700AA8040 /* ServiceCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCenterView.swift; sourceTree = "<group>"; };
+		C1F1A46728B332D400AA8040 /* ServiceCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCenterModel.swift; sourceTree = "<group>"; };
+		C1F1A46928B3345A00AA8040 /* BottomMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuItemView.swift; sourceTree = "<group>"; };
+		C1F1A46B28B34E7400AA8040 /* BottomMenuItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuItemModel.swift; sourceTree = "<group>"; };
+		C1F1A46D28B3563A00AA8040 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
+		C1F1A46F28B359FF00AA8040 /* BottomMenuToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuToggleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +120,16 @@
 			children = (
 				C13A852B28ACB9DB00484B66 /* CubeOnlyUIApp.swift */,
 				C13A852D28ACB9DB00484B66 /* ContentView.swift */,
+				C1F1A46728B332D400AA8040 /* ServiceCenterModel.swift */,
 				C13A855528ACBA2A00484B66 /* SettingView.swift */,
 				C13A855D28ACC67900484B66 /* SettingViewModel.swift */,
 				C13A855B28ACC0FF00484B66 /* SearchView.swift */,
+				C13A855F28ACE90500484B66 /* AddChannelView.swift */,
+				C1F1A46528B3192700AA8040 /* ServiceCenterView.swift */,
+				C1F1A46D28B3563A00AA8040 /* BottomMenuView.swift */,
+				C1F1A46B28B34E7400AA8040 /* BottomMenuItemModel.swift */,
+				C1F1A46928B3345A00AA8040 /* BottomMenuItemView.swift */,
+				C1F1A46F28B359FF00AA8040 /* BottomMenuToggleView.swift */,
 				C13A855728ACBA3900484B66 /* CheckMenuView.swift */,
 				C13A855828ACBA3900484B66 /* SelectMenuView.swift */,
 				C13A852F28ACB9DC00484B66 /* Assets.xcassets */,
@@ -272,11 +293,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F1A46828B332D400AA8040 /* ServiceCenterModel.swift in Sources */,
+				C1F1A47028B359FF00AA8040 /* BottomMenuToggleView.swift in Sources */,
 				C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */,
 				C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */,
+				C1F1A46628B3192800AA8040 /* ServiceCenterView.swift in Sources */,
 				C13A855628ACBA2A00484B66 /* SettingView.swift in Sources */,
 				C13A855A28ACBA3900484B66 /* SelectMenuView.swift in Sources */,
+				C1F1A46E28B3563A00AA8040 /* BottomMenuView.swift in Sources */,
+				C1F1A46C28B34E7400AA8040 /* BottomMenuItemModel.swift in Sources */,
+				C13A856028ACE90500484B66 /* AddChannelView.swift in Sources */,
 				C13A852E28ACB9DB00484B66 /* ContentView.swift in Sources */,
+				C1F1A46A28B3345A00AA8040 /* BottomMenuItemView.swift in Sources */,
 				C13A855C28ACC0FF00484B66 /* SearchView.swift in Sources */,
 				C13A852C28ACB9DB00484B66 /* CubeOnlyUIApp.swift in Sources */,
 			);

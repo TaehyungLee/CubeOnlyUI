@@ -9,23 +9,70 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var showModal = false
     var body: some View {
         
         NavigationView {
             ZStack {
                 VStack {
-                    NavigationLink {
-                        SettingView()
-                    } label: {
-                        Text("Setting")
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(spacing:70) {
+                            Button {
+                                showModal = true
+                            } label: {
+                                Text("서비스센터")
+                            }
+                            .sheet(isPresented: $showModal, content: {
+                                ServiceCenterView()
+                            })
+                            Button {
+                                
+                            } label: {
+                                Text("테스트버튼")
+                            }
+                            Button {
+                                
+                            } label: {
+                                Text("테스트버튼")
+                            }
+                            Button {
+                                
+                            } label: {
+                                Text("테스트버튼")
+                            }
+                            Button {
+                                
+                            } label: {
+                                Text("테스트버튼")
+                            }
+                            Button {
+                                
+                            } label: {
+                                Text("테스트버튼")
+                            }
+        //                    .fullScreenCover(isPresented: $showModal, content: {
+        //
+        //                    })
+                            NavigationLink {
+                                SettingView()
+                            } label: {
+                                Text("Setting")
+                            }
+                            .padding()
+                            NavigationLink {
+                                SearchView()
+                            } label: {
+                                Text("Search")
+                            }
+                            .padding()
+                            
+                        }
                     }
-                    .padding()
-                    NavigationLink {
-                        SearchView()
-                    } label: {
-                        Text("Search")
+                    // 하단 메뉴들
+                    VStack {
+                        BottomMenuView()
+                            
                     }
-                    .padding()
                 }
             }
             .navigationBarTitle("")
@@ -37,8 +84,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
