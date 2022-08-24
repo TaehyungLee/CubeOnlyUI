@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct BottomMenuView: View {
     var btmMenuList:[[String]] = [
@@ -32,17 +33,17 @@ struct BottomMenuView: View {
         ]
     ]
     
-    @State private var isExpand = false
-    
+    @Binding var isExpand:Bool
+    let action:()->Void
     var body: some View {
-        VStack {
+        VStack(spacing:0) {
             BottomMenuToggleView() {
                 withAnimation {
-                    isExpand.toggle()
+                    action()
                 }
-                
             }
                 .frame(height: 30)
+                .background(Color(white: 0.95))
             List {
                 ForEach(self.btmMenuList.filter { list in
                     return (isExpand || self.btmMenuList.first == list)

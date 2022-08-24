@@ -19,10 +19,11 @@ struct BottomMenuToggleView: View {
                     Divider()
                         .background(Color.gray)
                         .frame(width: 30, height: 2)
-                        .padding(.top)
+                        .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
                     Divider()
                         .background(Color.gray)
                         .frame(width: 30, height: 2)
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
                     Spacer()
                 }
                 .frame(maxWidth:.infinity, maxHeight: .infinity)
