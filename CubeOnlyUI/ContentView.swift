@@ -7,84 +7,64 @@
 
 import SwiftUI
 import Combine
+import Photos
+
 struct MyType:Codable {
     var str:String = ""
 }
 
+class ContentViewModel:ObservableObject {
+    
+    @Published var menuList = [
+        "키체인 테스트",
+        "이미지 피커",
+        "세팅",
+        "서치",
+        "포스트작성",
+        "번역",
+        "투표설정"
+    ]
+    @Published var isExpandBottomMenu: Bool = false
+    
+    init() {
+        
+    }
+    
+}
+
 struct ContentView: View {
     
-    @State var showModal = false
-    @State var showImagePicker: Bool = false
+    @StateObject var vm = ContentViewModel()
     
-    @State var image: Image? = nil
-    
-    @State var newValue = ""
-    @KeychainStorage("MyKey2") var savedValue = "Hello"
-    @KeychainStorage("MyKey2") var savedValue2
-    
-//    var isExpandPublish = PassthroughSubject<Bool,Never>()
-    @State var isExpandBottomMenu: Bool = false
     var body: some View {
         
         NavigationView {
             ZStack {
-                VStack {
-                    VStack(spacing:70) {
-                        
-                        TextField("MyValue", text: $newValue)
-                            .padding()
-                        Button("Keychain Save") {
-                            savedValue = newValue
-                        }
-                        Text(savedValue)
-                        Text(savedValue2)
-                        Button {
-                            showModal = true
-                        } label: {
-                            Text("검색화면")
-                        }
-                        .sheet(isPresented: $showModal, content: {
-                            SearchView()
-                        })
-                        VStack {
-                            Button {
-                                showImagePicker = true
+                ScrollView {
+                    VStack {
+                        ForEach(vm.menuList.indices, id: \.self) { rowNum in
+                            NavigationLink {
+                                goNextMenu(rowNum: rowNum)
                             } label: {
-                                Text("이미지피커")
+                                VStack(spacing:0) {
+                                    Text(vm.menuList[rowNum])
+                                        .font(.headline)
+                                        .padding()
+                                    Divider()
+                                }
                             }
-                            .sheet(isPresented: $showImagePicker, content: {
-//                                ImagePicker(sourceType: .photoLibrary) { image in
-//                                    self.image = Image(uiImage: image)
-//                                }
-                                PhotoPickerView()
-                            })
-                            image?.resizable().frame(width: 100, height: 100)
                         }
-                        NavigationLink {
-                            SettingView()
-                        } label: {
-                            Text("Setting")
-                        }
-                        .padding()
-                        NavigationLink {
-                            SearchView()
-                        } label: {
-                            Text("Search")
-                        }
-                        .padding()
-                        
                     }
-                    
                 }
                 // 하단 메뉴들
-                VStack {
-                    Spacer()
-                    BottomMenuView(isExpand: $isExpandBottomMenu) {
-                        isExpandBottomMenu.toggle()
-//                        isExpandPublish.send(isExpandBottomMenu)
-                    }
-                        
-                }
+//                VStack {
+//                    Spacer()
+//                    BottomMenuView(isExpand: $vm.isExpandBottomMenu) {
+//                        vm.isExpandBottomMenu.toggle()
+////                        isExpandPublish.send(isExpandBottomMenu)
+//                    }
+//
+//                }
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
@@ -97,13 +77,34 @@ struct ContentView: View {
         
     }
     
-    func keychainTest() {
+    func goNextMenu(rowNum:Int) -> some View {
+        VStack {
+            switch rowNum {
+            case 0:
+                KeyChainTestView()
+            case 1:
+                LocalImageGetView()
+            case 2:
+                SettingView()
+            case 3:
+                SearchView()
+            case 4:
+                PostWriteView()
+            case 5:
+                TransrateView()
+            case 6:
+                VotingWriteView()
+            default:
+                EmptyView()
+            }
+        }
         
     }
+    
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

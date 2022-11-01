@@ -35,7 +35,7 @@ struct CampusTapView: View {
     }
     
     var lineColor:Color {
-        return (campusValue == selectedCampusValue) ? .orange:Color(uiColor: .lightGray)
+        return (campusValue == selectedCampusValue) ? .orange:.gray
     }
     var body: some View {
         VStack(spacing: 0) {

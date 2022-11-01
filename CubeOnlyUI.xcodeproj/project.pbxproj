@@ -20,10 +20,15 @@
 		C13A855C28ACC0FF00484B66 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855B28ACC0FF00484B66 /* SearchView.swift */; };
 		C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855D28ACC67900484B66 /* SettingViewModel.swift */; };
 		C13A856028ACE90500484B66 /* AddChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A855F28ACE90500484B66 /* AddChannelView.swift */; };
+		C13C4B3E2910AD7000FBBA31 /* PostWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B3D2910AD7000FBBA31 /* PostWriteView.swift */; };
+		C13C4B402910AFC900FBBA31 /* LocalImageGetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B3F2910AFC900FBBA31 /* LocalImageGetView.swift */; };
+		C13C4B422910AFED00FBBA31 /* KeyChainTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */; };
+		C13C4B4A2910F9C200FBBA31 /* TransrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B492910F9C200FBBA31 /* TransrateView.swift */; };
+		C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */; };
+		C1BE23352911007500988604 /* VotingWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE23342911007500988604 /* VotingWriteView.swift */; };
 		C1F0D6C428B5B3E5002124D7 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0D6C328B5B3E5002124D7 /* KeychainStorage.swift */; };
 		C1F0D6C728B5B532002124D7 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = C1F0D6C628B5B532002124D7 /* KeychainAccess */; };
 		C1F0D6C928B5C8FC002124D7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0D6C828B5C8FC002124D7 /* ImagePicker.swift */; };
-		C1F0D6CB28B5CA5F002124D7 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0D6CA28B5CA5F002124D7 /* PhotoPickerView.swift */; };
 		C1F1A46628B3192800AA8040 /* ServiceCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46528B3192700AA8040 /* ServiceCenterView.swift */; };
 		C1F1A46828B332D400AA8040 /* ServiceCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46728B332D400AA8040 /* ServiceCenterModel.swift */; };
 		C1F1A46A28B3345A00AA8040 /* BottomMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F1A46928B3345A00AA8040 /* BottomMenuItemView.swift */; };
@@ -66,9 +71,14 @@
 		C13A855B28ACC0FF00484B66 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C13A855D28ACC67900484B66 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		C13A855F28ACE90500484B66 /* AddChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelView.swift; sourceTree = "<group>"; };
+		C13C4B3D2910AD7000FBBA31 /* PostWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWriteView.swift; sourceTree = "<group>"; };
+		C13C4B3F2910AFC900FBBA31 /* LocalImageGetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageGetView.swift; sourceTree = "<group>"; };
+		C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainTestView.swift; sourceTree = "<group>"; };
+		C13C4B492910F9C200FBBA31 /* TransrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransrateView.swift; sourceTree = "<group>"; };
+		C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		C1BE23342911007500988604 /* VotingWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingWriteView.swift; sourceTree = "<group>"; };
 		C1F0D6C328B5B3E5002124D7 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		C1F0D6C828B5C8FC002124D7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		C1F0D6CA28B5CA5F002124D7 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		C1F1A46528B3192700AA8040 /* ServiceCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCenterView.swift; sourceTree = "<group>"; };
 		C1F1A46728B332D400AA8040 /* ServiceCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCenterModel.swift; sourceTree = "<group>"; };
 		C1F1A46928B3345A00AA8040 /* BottomMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuItemView.swift; sourceTree = "<group>"; };
@@ -185,6 +195,11 @@
 				C1F1A46F28B359FF00AA8040 /* BottomMenuToggleView.swift */,
 				C13A855728ACBA3900484B66 /* CheckMenuView.swift */,
 				C13A855828ACBA3900484B66 /* SelectMenuView.swift */,
+				C13C4B3D2910AD7000FBBA31 /* PostWriteView.swift */,
+				C13C4B3F2910AFC900FBBA31 /* LocalImageGetView.swift */,
+				C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */,
+				C13C4B492910F9C200FBBA31 /* TransrateView.swift */,
+				C1BE23342911007500988604 /* VotingWriteView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,8 +223,8 @@
 		C1B3063228B60E3900AD3240 /* UIRepresentable */ = {
 			isa = PBXGroup;
 			children = (
-				C1F0D6CA28B5CA5F002124D7 /* PhotoPickerView.swift */,
 				C1F0D6C828B5C8FC002124D7 /* ImagePicker.swift */,
+				C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */,
 			);
 			path = UIRepresentable;
 			sourceTree = "<group>";
@@ -350,14 +365,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13C4B422910AFED00FBBA31 /* KeyChainTestView.swift in Sources */,
 				C1F1A46828B332D400AA8040 /* ServiceCenterModel.swift in Sources */,
 				C1F1A47028B359FF00AA8040 /* BottomMenuToggleView.swift in Sources */,
+				C1BE23352911007500988604 /* VotingWriteView.swift in Sources */,
+				C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */,
 				C1F0D6C428B5B3E5002124D7 /* KeychainStorage.swift in Sources */,
 				C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */,
 				C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */,
 				C1F1A46628B3192800AA8040 /* ServiceCenterView.swift in Sources */,
 				C13A855628ACBA2A00484B66 /* SettingView.swift in Sources */,
+				C13C4B3E2910AD7000FBBA31 /* PostWriteView.swift in Sources */,
 				C13A855A28ACBA3900484B66 /* SelectMenuView.swift in Sources */,
+				C13C4B4A2910F9C200FBBA31 /* TransrateView.swift in Sources */,
+				C13C4B402910AFC900FBBA31 /* LocalImageGetView.swift in Sources */,
 				C1F1A46E28B3563A00AA8040 /* BottomMenuView.swift in Sources */,
 				C1F1A46C28B34E7400AA8040 /* BottomMenuItemModel.swift in Sources */,
 				C13A856028ACE90500484B66 /* AddChannelView.swift in Sources */,
@@ -365,7 +386,6 @@
 				C1F1A46A28B3345A00AA8040 /* BottomMenuItemView.swift in Sources */,
 				C1F0D6C928B5C8FC002124D7 /* ImagePicker.swift in Sources */,
 				C13A855C28ACC0FF00484B66 /* SearchView.swift in Sources */,
-				C1F0D6CB28B5CA5F002124D7 /* PhotoPickerView.swift in Sources */,
 				C13A852C28ACB9DB00484B66 /* CubeOnlyUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,12 +548,15 @@
 				DEVELOPMENT_TEAM = L984CF3257;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근권한을 요청드립니다.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 접근권한을 요청드립니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근권한을 요청드립니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,12 +581,15 @@
 				DEVELOPMENT_TEAM = L984CF3257;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근권한을 요청드립니다.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "마이크 접근권한을 요청드립니다.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근권한을 요청드립니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
