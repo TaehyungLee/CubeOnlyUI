@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E79E159F1C5DFEBBEF8FB07 /* Pods_CubeOnlyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822E8AC5A1E157E6E4E8F8BD /* Pods_CubeOnlyUI.framework */; };
 		C13A852C28ACB9DB00484B66 /* CubeOnlyUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A852B28ACB9DB00484B66 /* CubeOnlyUIApp.swift */; };
 		C13A852E28ACB9DB00484B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A852D28ACB9DB00484B66 /* ContentView.swift */; };
 		C13A853028ACB9DC00484B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13A852F28ACB9DC00484B66 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		C13C4B402910AFC900FBBA31 /* LocalImageGetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B3F2910AFC900FBBA31 /* LocalImageGetView.swift */; };
 		C13C4B422910AFED00FBBA31 /* KeyChainTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */; };
 		C13C4B4A2910F9C200FBBA31 /* TransrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B492910F9C200FBBA31 /* TransrateView.swift */; };
+		C153F0D42918C9B10020F807 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153F0D32918C9B10020F807 /* RichTextEditor.swift */; };
 		C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */; };
 		C1BE23352911007500988604 /* VotingWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE23342911007500988604 /* VotingWriteView.swift */; };
 		C1F0D6C428B5B3E5002124D7 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0D6C328B5B3E5002124D7 /* KeychainStorage.swift */; };
@@ -55,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31E49C5A7104401236E7BFBC /* Pods-CubeOnlyUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CubeOnlyUI.release.xcconfig"; path = "Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI.release.xcconfig"; sourceTree = "<group>"; };
+		70A551B2614A3916C6E901BF /* Pods-CubeOnlyUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CubeOnlyUI.debug.xcconfig"; path = "Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI.debug.xcconfig"; sourceTree = "<group>"; };
+		822E8AC5A1E157E6E4E8F8BD /* Pods_CubeOnlyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CubeOnlyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13A852828ACB9DB00484B66 /* CubeOnlyUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeOnlyUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13A852B28ACB9DB00484B66 /* CubeOnlyUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeOnlyUIApp.swift; sourceTree = "<group>"; };
 		C13A852D28ACB9DB00484B66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 		C13C4B3F2910AFC900FBBA31 /* LocalImageGetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageGetView.swift; sourceTree = "<group>"; };
 		C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainTestView.swift; sourceTree = "<group>"; };
 		C13C4B492910F9C200FBBA31 /* TransrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransrateView.swift; sourceTree = "<group>"; };
+		C153F0D32918C9B10020F807 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
 		C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		C1BE23342911007500988604 /* VotingWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingWriteView.swift; sourceTree = "<group>"; };
 		C1F0D6C328B5B3E5002124D7 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1F0D6C728B5B532002124D7 /* KeychainAccess in Frameworks */,
+				1E79E159F1C5DFEBBEF8FB07 /* Pods_CubeOnlyUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012D8130CB2ABEFA347D9015 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A551B2614A3916C6E901BF /* Pods-CubeOnlyUI.debug.xcconfig */,
+				31E49C5A7104401236E7BFBC /* Pods-CubeOnlyUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C13A851F28ACB9DB00484B66 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +136,8 @@
 				C13A853B28ACB9DC00484B66 /* CubeOnlyUITests */,
 				C13A854528ACB9DC00484B66 /* CubeOnlyUIUITests */,
 				C13A852928ACB9DB00484B66 /* Products */,
+				012D8130CB2ABEFA347D9015 /* Pods */,
+				E900F39E59B21DFBF55C1872 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,8 +243,17 @@
 			children = (
 				C1F0D6C828B5C8FC002124D7 /* ImagePicker.swift */,
 				C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */,
+				C153F0D32918C9B10020F807 /* RichTextEditor.swift */,
 			);
 			path = UIRepresentable;
+			sourceTree = "<group>";
+		};
+		E900F39E59B21DFBF55C1872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				822E8AC5A1E157E6E4E8F8BD /* Pods_CubeOnlyUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C13A854C28ACB9DC00484B66 /* Build configuration list for PBXNativeTarget "CubeOnlyUI" */;
 			buildPhases = (
+				3B2AF5D1DB73778F394E1369 /* [CP] Check Pods Manifest.lock */,
 				C13A852428ACB9DB00484B66 /* Sources */,
 				C13A852528ACB9DB00484B66 /* Frameworks */,
 				C13A852628ACB9DB00484B66 /* Resources */,
+				414261CA7140283E2288507C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,6 +389,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B2AF5D1DB73778F394E1369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CubeOnlyUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		414261CA7140283E2288507C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C13A852428ACB9DB00484B66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -370,6 +441,7 @@
 				C1F1A47028B359FF00AA8040 /* BottomMenuToggleView.swift in Sources */,
 				C1BE23352911007500988604 /* VotingWriteView.swift in Sources */,
 				C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */,
+				C153F0D42918C9B10020F807 /* RichTextEditor.swift in Sources */,
 				C1F0D6C428B5B3E5002124D7 /* KeychainStorage.swift in Sources */,
 				C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */,
 				C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */,
@@ -539,6 +611,7 @@
 		};
 		C13A854D28ACB9DC00484B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A551B2614A3916C6E901BF /* Pods-CubeOnlyUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -572,6 +645,7 @@
 		};
 		C13A854E28ACB9DC00484B66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E49C5A7104401236E7BFBC /* Pods-CubeOnlyUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

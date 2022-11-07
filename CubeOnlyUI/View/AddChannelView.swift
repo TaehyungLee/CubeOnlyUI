@@ -51,3 +51,8 @@ struct AddChannelView: View {
         .navigationBarBackButtonHidden(true)
     }
 }
+struct AddChannelView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddChannelView()
+    }
+}
