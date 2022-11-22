@@ -19,10 +19,10 @@ struct RichTextEditor: UIViewRepresentable {
         editor.isScrollEnabled = false
         editor.delegate = context.coordinator // Don't forget to connect you UIView's delegate to your coordinator class.
 
-        let toolbar = RichEditorToolbar(frame: CGRect(x: 0, y: 0, width: 100, height: 44))
+        let toolbar = RichEditorToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
         
         let dismissToolbarItem = RichEditorOptionItem(image: UIImage(named: "ZSSkeyboard"), title: "") { toolbar in
-            UIApplication.shared.keyWindow?.endEditing(true)
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         }
         toolbar.options = [RichEditorDefaultOption.clear,
                            RichEditorDefaultOption.undo, RichEditorDefaultOption.redo, RichEditorDefaultOption.bold, RichEditorDefaultOption.italic,

@@ -26,6 +26,13 @@
 		C13C4B422910AFED00FBBA31 /* KeyChainTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */; };
 		C13C4B4A2910F9C200FBBA31 /* TransrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B492910F9C200FBBA31 /* TransrateView.swift */; };
 		C153F0D42918C9B10020F807 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153F0D32918C9B10020F807 /* RichTextEditor.swift */; };
+		C16C40F2292B1F0000D63566 /* PagingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C40F1292B1F0000D63566 /* PagingTabView.swift */; };
+		C16C40F4292B20D900D63566 /* ScrollViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C40F3292B20D900D63566 /* ScrollViewTest.swift */; };
+		C16C40F6292B22DA00D63566 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C40F5292B22DA00D63566 /* MyWebView.swift */; };
+		C16C40F9292B27E700D63566 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C16C40F8292B27E700D63566 /* SDWebImageSwiftUI */; };
+		C17819182921EEB500BDA6EB /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = C17819172921EEB500BDA6EB /* TextView */; };
+		C178191A2921EED600BDA6EB /* TextViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17819192921EED600BDA6EB /* TextViewUI.swift */; };
+		C178191D29221B4C00BDA6EB /* UIView+extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C178191C29221B4C00BDA6EB /* UIView+extentions.swift */; };
 		C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */; };
 		C1BE23352911007500988604 /* VotingWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE23342911007500988604 /* VotingWriteView.swift */; };
 		C1F0D6C428B5B3E5002124D7 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0D6C328B5B3E5002124D7 /* KeychainStorage.swift */; };
@@ -81,6 +88,11 @@
 		C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainTestView.swift; sourceTree = "<group>"; };
 		C13C4B492910F9C200FBBA31 /* TransrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransrateView.swift; sourceTree = "<group>"; };
 		C153F0D32918C9B10020F807 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
+		C16C40F1292B1F0000D63566 /* PagingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabView.swift; sourceTree = "<group>"; };
+		C16C40F3292B20D900D63566 /* ScrollViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewTest.swift; sourceTree = "<group>"; };
+		C16C40F5292B22DA00D63566 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		C17819192921EED600BDA6EB /* TextViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewUI.swift; sourceTree = "<group>"; };
+		C178191C29221B4C00BDA6EB /* UIView+extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extentions.swift"; sourceTree = "<group>"; };
 		C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		C1BE23342911007500988604 /* VotingWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingWriteView.swift; sourceTree = "<group>"; };
 		C1F0D6C328B5B3E5002124D7 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
@@ -98,7 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16C40F9292B27E700D63566 /* SDWebImageSwiftUI in Frameworks */,
 				C1F0D6C728B5B532002124D7 /* KeychainAccess in Frameworks */,
+				C17819182921EEB500BDA6EB /* TextView in Frameworks */,
 				1E79E159F1C5DFEBBEF8FB07 /* Pods_CubeOnlyUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +168,7 @@
 		C13A852A28ACB9DB00484B66 /* CubeOnlyUI */ = {
 			isa = PBXGroup;
 			children = (
+				C178191B29221B2F00BDA6EB /* extention */,
 				C1B3063228B60E3900AD3240 /* UIRepresentable */,
 				C1B3063128B5DA1500AD3240 /* propertyWrapper */,
 				C1B3063028B5D9A300AD3240 /* ViewModel */,
@@ -192,6 +207,21 @@
 			path = CubeOnlyUIUITests;
 			sourceTree = "<group>";
 		};
+		C17819152921E91E00BDA6EB /* ZSSRichTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZSSRichTextEditor;
+			sourceTree = "<group>";
+		};
+		C178191B29221B2F00BDA6EB /* extention */ = {
+			isa = PBXGroup;
+			children = (
+				C178191C29221B4C00BDA6EB /* UIView+extentions.swift */,
+			);
+			path = extention;
+			sourceTree = "<group>";
+		};
 		C1B3062E28B5D99100AD3240 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +247,8 @@
 				C13C4B3F2910AFC900FBBA31 /* LocalImageGetView.swift */,
 				C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */,
 				C13C4B492910F9C200FBBA31 /* TransrateView.swift */,
+				C17819192921EED600BDA6EB /* TextViewUI.swift */,
+				C16C40F3292B20D900D63566 /* ScrollViewTest.swift */,
 				C1BE23342911007500988604 /* VotingWriteView.swift */,
 			);
 			path = View;
@@ -241,9 +273,12 @@
 		C1B3063228B60E3900AD3240 /* UIRepresentable */ = {
 			isa = PBXGroup;
 			children = (
+				C16C40F1292B1F0000D63566 /* PagingTabView.swift */,
 				C1F0D6C828B5C8FC002124D7 /* ImagePicker.swift */,
 				C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */,
 				C153F0D32918C9B10020F807 /* RichTextEditor.swift */,
+				C16C40F5292B22DA00D63566 /* MyWebView.swift */,
+				C17819152921E91E00BDA6EB /* ZSSRichTextEditor */,
 			);
 			path = UIRepresentable;
 			sourceTree = "<group>";
@@ -276,6 +311,8 @@
 			name = CubeOnlyUI;
 			packageProductDependencies = (
 				C1F0D6C628B5B532002124D7 /* KeychainAccess */,
+				C17819172921EEB500BDA6EB /* TextView */,
+				C16C40F8292B27E700D63566 /* SDWebImageSwiftUI */,
 			);
 			productName = CubeOnlyUI;
 			productReference = C13A852828ACB9DB00484B66 /* CubeOnlyUI.app */;
@@ -351,6 +388,8 @@
 			mainGroup = C13A851F28ACB9DB00484B66;
 			packageReferences = (
 				C1F0D6C528B5B532002124D7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				C17819162921EEB500BDA6EB /* XCRemoteSwiftPackageReference "TextView" */,
+				C16C40F7292B27E700D63566 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = C13A852928ACB9DB00484B66 /* Products */;
 			projectDirPath = "";
@@ -440,11 +479,13 @@
 				C1F1A46828B332D400AA8040 /* ServiceCenterModel.swift in Sources */,
 				C1F1A47028B359FF00AA8040 /* BottomMenuToggleView.swift in Sources */,
 				C1BE23352911007500988604 /* VotingWriteView.swift in Sources */,
+				C16C40F2292B1F0000D63566 /* PagingTabView.swift in Sources */,
 				C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */,
 				C153F0D42918C9B10020F807 /* RichTextEditor.swift in Sources */,
 				C1F0D6C428B5B3E5002124D7 /* KeychainStorage.swift in Sources */,
 				C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */,
 				C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */,
+				C178191A2921EED600BDA6EB /* TextViewUI.swift in Sources */,
 				C1F1A46628B3192800AA8040 /* ServiceCenterView.swift in Sources */,
 				C13A855628ACBA2A00484B66 /* SettingView.swift in Sources */,
 				C13C4B3E2910AD7000FBBA31 /* PostWriteView.swift in Sources */,
@@ -456,7 +497,10 @@
 				C13A856028ACE90500484B66 /* AddChannelView.swift in Sources */,
 				C13A852E28ACB9DB00484B66 /* ContentView.swift in Sources */,
 				C1F1A46A28B3345A00AA8040 /* BottomMenuItemView.swift in Sources */,
+				C178191D29221B4C00BDA6EB /* UIView+extentions.swift in Sources */,
+				C16C40F4292B20D900D63566 /* ScrollViewTest.swift in Sources */,
 				C1F0D6C928B5C8FC002124D7 /* ImagePicker.swift in Sources */,
+				C16C40F6292B22DA00D63566 /* MyWebView.swift in Sources */,
 				C13A855C28ACC0FF00484B66 /* SearchView.swift in Sources */,
 				C13A852C28ACB9DB00484B66 /* CubeOnlyUIApp.swift in Sources */,
 			);
@@ -791,6 +835,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C16C40F7292B27E700D63566 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C17819162921EEB500BDA6EB /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUI-Plus/TextView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C1F0D6C528B5B532002124D7 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
@@ -802,6 +862,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C16C40F8292B27E700D63566 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C16C40F7292B27E700D63566 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		C17819172921EEB500BDA6EB /* TextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C17819162921EEB500BDA6EB /* XCRemoteSwiftPackageReference "TextView" */;
+			productName = TextView;
+		};
 		C1F0D6C628B5B532002124D7 /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C1F0D6C528B5B532002124D7 /* XCRemoteSwiftPackageReference "KeychainAccess" */;

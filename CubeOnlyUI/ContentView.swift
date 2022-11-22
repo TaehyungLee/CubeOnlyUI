@@ -22,7 +22,9 @@ class ContentViewModel:ObservableObject {
         "서치",
         "포스트작성",
         "번역",
-        "투표설정"
+        "투표설정",
+        "링크",
+        "스크롤"
     ]
     @Published var isExpandBottomMenu: Bool = false
     
@@ -94,6 +96,10 @@ struct ContentView: View {
                 TransrateView()
             case 6:
                 VotingWriteView()
+            case 7:
+                TextViewUI()
+            case 8:
+                ScrollViewTest()
             default:
                 EmptyView()
             }

@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "ZSSkeyboard.png",
+      "filename" : "ZSSparagraph.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ZSSkeyboard@2x.png",
+      "filename" : "ZSSparagraph@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
