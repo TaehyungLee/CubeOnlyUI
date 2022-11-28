@@ -33,6 +33,8 @@
 		C17819182921EEB500BDA6EB /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = C17819172921EEB500BDA6EB /* TextView */; };
 		C178191A2921EED600BDA6EB /* TextViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17819192921EED600BDA6EB /* TextViewUI.swift */; };
 		C178191D29221B4C00BDA6EB /* UIView+extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C178191C29221B4C00BDA6EB /* UIView+extentions.swift */; };
+		C19C1B6729348DB40069885C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C1B6629348DB40069885C /* ProfileView.swift */; };
+		C19C1B6929349BD80069885C /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C1B6829349BD80069885C /* Encodable.swift */; };
 		C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */; };
 		C1BE23352911007500988604 /* VotingWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE23342911007500988604 /* VotingWriteView.swift */; };
 		C1F0D6C428B5B3E5002124D7 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0D6C328B5B3E5002124D7 /* KeychainStorage.swift */; };
@@ -93,6 +95,8 @@
 		C16C40F5292B22DA00D63566 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
 		C17819192921EED600BDA6EB /* TextViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewUI.swift; sourceTree = "<group>"; };
 		C178191C29221B4C00BDA6EB /* UIView+extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extentions.swift"; sourceTree = "<group>"; };
+		C19C1B6629348DB40069885C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C19C1B6829349BD80069885C /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		C1BE23342911007500988604 /* VotingWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingWriteView.swift; sourceTree = "<group>"; };
 		C1F0D6C328B5B3E5002124D7 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				C178191C29221B4C00BDA6EB /* UIView+extentions.swift */,
+				C19C1B6829349BD80069885C /* Encodable.swift */,
 			);
 			path = extention;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				C13C4B492910F9C200FBBA31 /* TransrateView.swift */,
 				C17819192921EED600BDA6EB /* TextViewUI.swift */,
 				C16C40F3292B20D900D63566 /* ScrollViewTest.swift */,
+				C19C1B6629348DB40069885C /* ProfileView.swift */,
 				C1BE23342911007500988604 /* VotingWriteView.swift */,
 			);
 			path = View;
@@ -486,6 +492,7 @@
 				C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */,
 				C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */,
 				C178191A2921EED600BDA6EB /* TextViewUI.swift in Sources */,
+				C19C1B6729348DB40069885C /* ProfileView.swift in Sources */,
 				C1F1A46628B3192800AA8040 /* ServiceCenterView.swift in Sources */,
 				C13A855628ACBA2A00484B66 /* SettingView.swift in Sources */,
 				C13C4B3E2910AD7000FBBA31 /* PostWriteView.swift in Sources */,
@@ -493,6 +500,7 @@
 				C13C4B4A2910F9C200FBBA31 /* TransrateView.swift in Sources */,
 				C13C4B402910AFC900FBBA31 /* LocalImageGetView.swift in Sources */,
 				C1F1A46E28B3563A00AA8040 /* BottomMenuView.swift in Sources */,
+				C19C1B6929349BD80069885C /* Encodable.swift in Sources */,
 				C1F1A46C28B34E7400AA8040 /* BottomMenuItemModel.swift in Sources */,
 				C13A856028ACE90500484B66 /* AddChannelView.swift in Sources */,
 				C13A852E28ACB9DB00484B66 /* ContentView.swift in Sources */,
