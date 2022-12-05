@@ -25,7 +25,6 @@
 		C13C4B402910AFC900FBBA31 /* LocalImageGetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B3F2910AFC900FBBA31 /* LocalImageGetView.swift */; };
 		C13C4B422910AFED00FBBA31 /* KeyChainTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */; };
 		C13C4B4A2910F9C200FBBA31 /* TransrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C4B492910F9C200FBBA31 /* TransrateView.swift */; };
-		C153F0D42918C9B10020F807 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153F0D32918C9B10020F807 /* RichTextEditor.swift */; };
 		C16C40F2292B1F0000D63566 /* PagingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C40F1292B1F0000D63566 /* PagingTabView.swift */; };
 		C16C40F4292B20D900D63566 /* ScrollViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C40F3292B20D900D63566 /* ScrollViewTest.swift */; };
 		C16C40F6292B22DA00D63566 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C40F5292B22DA00D63566 /* MyWebView.swift */; };
@@ -33,6 +32,7 @@
 		C17819182921EEB500BDA6EB /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = C17819172921EEB500BDA6EB /* TextView */; };
 		C178191A2921EED600BDA6EB /* TextViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17819192921EED600BDA6EB /* TextViewUI.swift */; };
 		C178191D29221B4C00BDA6EB /* UIView+extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C178191C29221B4C00BDA6EB /* UIView+extentions.swift */; };
+		C17DF4E9293D93F6009083CE /* RichTextKit in Frameworks */ = {isa = PBXBuildFile; productRef = C17DF4E8293D93F6009083CE /* RichTextKit */; };
 		C19C1B6729348DB40069885C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C1B6629348DB40069885C /* ProfileView.swift */; };
 		C19C1B6929349BD80069885C /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C1B6829349BD80069885C /* Encodable.swift */; };
 		C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */; };
@@ -89,7 +89,6 @@
 		C13C4B3F2910AFC900FBBA31 /* LocalImageGetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageGetView.swift; sourceTree = "<group>"; };
 		C13C4B412910AFED00FBBA31 /* KeyChainTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainTestView.swift; sourceTree = "<group>"; };
 		C13C4B492910F9C200FBBA31 /* TransrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransrateView.swift; sourceTree = "<group>"; };
-		C153F0D32918C9B10020F807 /* RichTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
 		C16C40F1292B1F0000D63566 /* PagingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabView.swift; sourceTree = "<group>"; };
 		C16C40F3292B20D900D63566 /* ScrollViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewTest.swift; sourceTree = "<group>"; };
 		C16C40F5292B22DA00D63566 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
@@ -117,6 +116,7 @@
 				C16C40F9292B27E700D63566 /* SDWebImageSwiftUI in Frameworks */,
 				C1F0D6C728B5B532002124D7 /* KeychainAccess in Frameworks */,
 				C17819182921EEB500BDA6EB /* TextView in Frameworks */,
+				C17DF4E9293D93F6009083CE /* RichTextKit in Frameworks */,
 				1E79E159F1C5DFEBBEF8FB07 /* Pods_CubeOnlyUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,13 +211,6 @@
 			path = CubeOnlyUIUITests;
 			sourceTree = "<group>";
 		};
-		C17819152921E91E00BDA6EB /* ZSSRichTextEditor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ZSSRichTextEditor;
-			sourceTree = "<group>";
-		};
 		C178191B29221B2F00BDA6EB /* extention */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,9 +275,7 @@
 				C16C40F1292B1F0000D63566 /* PagingTabView.swift */,
 				C1F0D6C828B5C8FC002124D7 /* ImagePicker.swift */,
 				C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */,
-				C153F0D32918C9B10020F807 /* RichTextEditor.swift */,
 				C16C40F5292B22DA00D63566 /* MyWebView.swift */,
-				C17819152921E91E00BDA6EB /* ZSSRichTextEditor */,
 			);
 			path = UIRepresentable;
 			sourceTree = "<group>";
@@ -308,7 +299,6 @@
 				C13A852428ACB9DB00484B66 /* Sources */,
 				C13A852528ACB9DB00484B66 /* Frameworks */,
 				C13A852628ACB9DB00484B66 /* Resources */,
-				414261CA7140283E2288507C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +309,7 @@
 				C1F0D6C628B5B532002124D7 /* KeychainAccess */,
 				C17819172921EEB500BDA6EB /* TextView */,
 				C16C40F8292B27E700D63566 /* SDWebImageSwiftUI */,
+				C17DF4E8293D93F6009083CE /* RichTextKit */,
 			);
 			productName = CubeOnlyUI;
 			productReference = C13A852828ACB9DB00484B66 /* CubeOnlyUI.app */;
@@ -396,6 +387,7 @@
 				C1F0D6C528B5B532002124D7 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				C17819162921EEB500BDA6EB /* XCRemoteSwiftPackageReference "TextView" */,
 				C16C40F7292B27E700D63566 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				C17DF4E7293D93F6009083CE /* XCRemoteSwiftPackageReference "RichTextKit" */,
 			);
 			productRefGroup = C13A852928ACB9DB00484B66 /* Products */;
 			projectDirPath = "";
@@ -457,23 +449,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		414261CA7140283E2288507C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -487,7 +462,6 @@
 				C1BE23352911007500988604 /* VotingWriteView.swift in Sources */,
 				C16C40F2292B1F0000D63566 /* PagingTabView.swift in Sources */,
 				C1AB60B4290FCDAE00047584 /* PhotoPicker.swift in Sources */,
-				C153F0D42918C9B10020F807 /* RichTextEditor.swift in Sources */,
 				C1F0D6C428B5B3E5002124D7 /* KeychainStorage.swift in Sources */,
 				C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */,
 				C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */,
@@ -859,6 +833,14 @@
 				kind = branch;
 			};
 		};
+		C17DF4E7293D93F6009083CE /* XCRemoteSwiftPackageReference "RichTextKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/RichTextKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
 		C1F0D6C528B5B532002124D7 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
@@ -879,6 +861,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C17819162921EEB500BDA6EB /* XCRemoteSwiftPackageReference "TextView" */;
 			productName = TextView;
+		};
+		C17DF4E8293D93F6009083CE /* RichTextKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C17DF4E7293D93F6009083CE /* XCRemoteSwiftPackageReference "RichTextKit" */;
+			productName = RichTextKit;
 		};
 		C1F0D6C628B5B532002124D7 /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;

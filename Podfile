@@ -3,7 +3,6 @@
 
 target 'CubeOnlyUI' do
   # Comment the next line if you don't want to use dynamic frameworks
-  pod "RichEditorView"
   use_frameworks!
 
   # Pods for CubeOnlyUI
