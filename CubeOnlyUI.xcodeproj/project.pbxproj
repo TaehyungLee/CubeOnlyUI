@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1E79E159F1C5DFEBBEF8FB07 /* Pods_CubeOnlyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822E8AC5A1E157E6E4E8F8BD /* Pods_CubeOnlyUI.framework */; };
+		C11DEA5C2946B7DD001BFC40 /* iPhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11DEA5B2946B7DD001BFC40 /* iPhoneContentView.swift */; };
+		C11DEA5E2946B894001BFC40 /* iPadContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11DEA5D2946B894001BFC40 /* iPadContentView.swift */; };
+		C11DEA622946C8C1001BFC40 /* ipadMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11DEA612946C8C1001BFC40 /* ipadMainView.swift */; };
+		C11DEA642946F3CB001BFC40 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11DEA632946F3CB001BFC40 /* UIDevice.swift */; };
+		C11DEA662946FF52001BFC40 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C11DEA652946FF51001BFC40 /* test.html */; };
+		C11DEA682946FFA8001BFC40 /* BackgroundWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11DEA672946FFA8001BFC40 /* BackgroundWebView.swift */; };
+		C11DEA6A29470707001BFC40 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11DEA6929470707001BFC40 /* CommonViewModel.swift */; };
 		C13A852C28ACB9DB00484B66 /* CubeOnlyUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A852B28ACB9DB00484B66 /* CubeOnlyUIApp.swift */; };
 		C13A852E28ACB9DB00484B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A852D28ACB9DB00484B66 /* ContentView.swift */; };
 		C13A853028ACB9DC00484B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13A852F28ACB9DC00484B66 /* Assets.xcassets */; };
@@ -69,6 +76,13 @@
 		31E49C5A7104401236E7BFBC /* Pods-CubeOnlyUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CubeOnlyUI.release.xcconfig"; path = "Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI.release.xcconfig"; sourceTree = "<group>"; };
 		70A551B2614A3916C6E901BF /* Pods-CubeOnlyUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CubeOnlyUI.debug.xcconfig"; path = "Target Support Files/Pods-CubeOnlyUI/Pods-CubeOnlyUI.debug.xcconfig"; sourceTree = "<group>"; };
 		822E8AC5A1E157E6E4E8F8BD /* Pods_CubeOnlyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CubeOnlyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11DEA5B2946B7DD001BFC40 /* iPhoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneContentView.swift; sourceTree = "<group>"; };
+		C11DEA5D2946B894001BFC40 /* iPadContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadContentView.swift; sourceTree = "<group>"; };
+		C11DEA612946C8C1001BFC40 /* ipadMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ipadMainView.swift; sourceTree = "<group>"; };
+		C11DEA632946F3CB001BFC40 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		C11DEA652946FF51001BFC40 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		C11DEA672946FFA8001BFC40 /* BackgroundWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundWebView.swift; sourceTree = "<group>"; };
+		C11DEA6929470707001BFC40 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		C13A852828ACB9DB00484B66 /* CubeOnlyUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeOnlyUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13A852B28ACB9DB00484B66 /* CubeOnlyUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeOnlyUIApp.swift; sourceTree = "<group>"; };
 		C13A852D28ACB9DB00484B66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +161,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C11DEA5F2946C88C001BFC40 /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iphone;
+			sourceTree = "<group>";
+		};
+		C11DEA602946C89B001BFC40 /* ipad */ = {
+			isa = PBXGroup;
+			children = (
+				C11DEA612946C8C1001BFC40 /* ipadMainView.swift */,
+			);
+			path = ipad;
+			sourceTree = "<group>";
+		};
 		C13A851F28ACB9DB00484B66 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +209,7 @@
 				C1B3062E28B5D99100AD3240 /* Model */,
 				C13A852B28ACB9DB00484B66 /* CubeOnlyUIApp.swift */,
 				C13A852D28ACB9DB00484B66 /* ContentView.swift */,
+				C11DEA652946FF51001BFC40 /* test.html */,
 				C13A852F28ACB9DC00484B66 /* Assets.xcassets */,
 				C13A853128ACB9DC00484B66 /* Preview Content */,
 			);
@@ -215,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				C178191C29221B4C00BDA6EB /* UIView+extentions.swift */,
+				C11DEA632946F3CB001BFC40 /* UIDevice.swift */,
 				C19C1B6829349BD80069885C /* Encodable.swift */,
 			);
 			path = extention;
@@ -232,6 +263,8 @@
 		C1B3062F28B5D99900AD3240 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C11DEA602946C89B001BFC40 /* ipad */,
+				C11DEA5F2946C88C001BFC40 /* iphone */,
 				C13A855528ACBA2A00484B66 /* SettingView.swift */,
 				C13A855B28ACC0FF00484B66 /* SearchView.swift */,
 				C13A855F28ACE90500484B66 /* AddChannelView.swift */,
@@ -249,6 +282,8 @@
 				C16C40F3292B20D900D63566 /* ScrollViewTest.swift */,
 				C19C1B6629348DB40069885C /* ProfileView.swift */,
 				C1BE23342911007500988604 /* VotingWriteView.swift */,
+				C11DEA5B2946B7DD001BFC40 /* iPhoneContentView.swift */,
+				C11DEA5D2946B894001BFC40 /* iPadContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				C13A855D28ACC67900484B66 /* SettingViewModel.swift */,
+				C11DEA6929470707001BFC40 /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -276,6 +312,7 @@
 				C1F0D6C828B5C8FC002124D7 /* ImagePicker.swift */,
 				C1AB60B3290FCDAE00047584 /* PhotoPicker.swift */,
 				C16C40F5292B22DA00D63566 /* MyWebView.swift */,
+				C11DEA672946FFA8001BFC40 /* BackgroundWebView.swift */,
 			);
 			path = UIRepresentable;
 			sourceTree = "<group>";
@@ -407,6 +444,7 @@
 			files = (
 				C13A853328ACB9DC00484B66 /* Preview Assets.xcassets in Resources */,
 				C13A853028ACB9DC00484B66 /* Assets.xcassets in Resources */,
+				C11DEA662946FF52001BFC40 /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13C4B422910AFED00FBBA31 /* KeyChainTestView.swift in Sources */,
+				C11DEA5C2946B7DD001BFC40 /* iPhoneContentView.swift in Sources */,
 				C1F1A46828B332D400AA8040 /* ServiceCenterModel.swift in Sources */,
 				C1F1A47028B359FF00AA8040 /* BottomMenuToggleView.swift in Sources */,
 				C1BE23352911007500988604 /* VotingWriteView.swift in Sources */,
@@ -466,10 +505,13 @@
 				C13A855928ACBA3900484B66 /* CheckMenuView.swift in Sources */,
 				C13A855E28ACC67900484B66 /* SettingViewModel.swift in Sources */,
 				C178191A2921EED600BDA6EB /* TextViewUI.swift in Sources */,
+				C11DEA682946FFA8001BFC40 /* BackgroundWebView.swift in Sources */,
+				C11DEA622946C8C1001BFC40 /* ipadMainView.swift in Sources */,
 				C19C1B6729348DB40069885C /* ProfileView.swift in Sources */,
 				C1F1A46628B3192800AA8040 /* ServiceCenterView.swift in Sources */,
 				C13A855628ACBA2A00484B66 /* SettingView.swift in Sources */,
 				C13C4B3E2910AD7000FBBA31 /* PostWriteView.swift in Sources */,
+				C11DEA642946F3CB001BFC40 /* UIDevice.swift in Sources */,
 				C13A855A28ACBA3900484B66 /* SelectMenuView.swift in Sources */,
 				C13C4B4A2910F9C200FBBA31 /* TransrateView.swift in Sources */,
 				C13C4B402910AFC900FBBA31 /* LocalImageGetView.swift in Sources */,
@@ -484,7 +526,9 @@
 				C1F0D6C928B5C8FC002124D7 /* ImagePicker.swift in Sources */,
 				C16C40F6292B22DA00D63566 /* MyWebView.swift in Sources */,
 				C13A855C28ACC0FF00484B66 /* SearchView.swift in Sources */,
+				C11DEA5E2946B894001BFC40 /* iPadContentView.swift in Sources */,
 				C13A852C28ACB9DB00484B66 /* CubeOnlyUIApp.swift in Sources */,
+				C11DEA6A29470707001BFC40 /* CommonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

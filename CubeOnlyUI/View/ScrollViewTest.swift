@@ -23,6 +23,11 @@ struct RandomModel:Identifiable {
     var randomStr:String
 }
 
+enum RequestType {
+    case prev
+    case next
+}
+
 class ScrollViewTestViewModel:ObservableObject {
     
     @Published var isLoading = false
@@ -32,6 +37,7 @@ class ScrollViewTestViewModel:ObservableObject {
     let maxPage = 3
     @Published var currPageNum = 1
     
+    @Published var reqType:RequestType = .next
     
     init() {
         getNextData()
@@ -48,6 +54,8 @@ class ScrollViewTestViewModel:ObservableObject {
     
     func getPrevData() {
         if currPageNum-1 >= 0 {
+            
+            self.reqType = .prev
             self.isLoading = true
             DispatchQueue.main.asyncAfter(deadline: .now()+1.0) {
                 self.currPageNum -= 1
@@ -66,6 +74,7 @@ class ScrollViewTestViewModel:ObservableObject {
     
     func getNextData() {
         if maxPage >= currPageNum+1 {
+            self.reqType = .next
             self.isLoading = true
             DispatchQueue.main.asyncAfter(deadline: .now()+1.0) {
                 self.currPageNum += 1
@@ -115,11 +124,20 @@ struct ScrollViewTest: View {
                                         vm.getPrevData()
                                     }
                                 }
+                                .onTapGesture {
+                                    withAnimation {
+                                        proxy.scrollTo(model.id, anchor: .top)
+                                    }
+                                    
+                                }
                         }
                     }
                     .onChange(of: vm.scrollToTarget) { (target) in
-                        print(target)
-                        proxy.scrollTo(target)
+                        print(target ?? "")
+                        withAnimation {
+                            proxy.scrollTo(target, anchor: vm.reqType == .prev ? .top : .bottom)
+                        }
+                        
                     }
                     
                 }

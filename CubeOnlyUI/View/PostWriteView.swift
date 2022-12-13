@@ -52,6 +52,7 @@ extension Image {
 class PostWriteViewModel:ObservableObject {
     @Published var text = NSAttributedString(string: "Type here...")
     @Published var titleStr = ""
+    @Published var htmlStr = ""
 //    @Published var section = DemoSection.textEditor
     var cancellable = Set<AnyCancellable>()
     
@@ -62,106 +63,116 @@ class PostWriteViewModel:ObservableObject {
     
     init() {
         $text
-            .sink { attrStr in
+            .sink { [weak self] attrStr in
                 print("attr str : \(attrStr.string)")
                 
                 if let htmlStr = attrStr.toHtml() {
                     print("attrToHtml : \(htmlStr)")
+                    self?.htmlStr = htmlStr
                 }
                 
             }.store(in: &cancellable)
     }
+    
+    
+    func save() {
+        
+    }
 }
 
 struct PostWriteView: View {
-    
+    @EnvironmentObject var commonVM: CommonViewModel
     @StateObject var vm = PostWriteViewModel()
     @StateObject
     var context = RichTextContext()
       
     var body: some View {
-        VStack {
-            VStack(spacing:0) {
-                HStack {
-                    Text("포스트 쓰기")
-                        .padding()
-                    Spacer()
-                }
-                
-                HStack {
-                    TextField("제목", text: $vm.titleStr)
-                        .padding()
-                        .overlay(
+        ZStack {
+            BackgroundWebView()
+            VStack {
+                VStack(spacing:0) {
+                    HStack {
+                        Text("포스트 쓰기")
+                            .padding()
+                        Spacer()
+                    }
+                    
+                    HStack {
+                        TextField("제목", text: $vm.titleStr)
+                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(lineWidth: 1)
+                                    .fill(Color.init(white: 0.8))
+                            )
+                            
+                    }
+                    .padding(.horizontal)
+                    
+                    VStack {
+                        ZStack {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(lineWidth: 1)
                                 .fill(Color.init(white: 0.8))
-                        )
+                            editor
+                                
+                        }
+                            
+                    }
+                    .padding()
+                    
+                    HStack(spacing:20) {
+                        Button {
+                            commonVM.webviewScriptStr.send( "javascript:btn(\"\(vm.htmlStr)\")" )
+                        } label: {
+                            ZStack {
+                                Capsule()
+                                    .fill(Color.init(white: 0.3))
+                                    .frame(width: 140, height: 45)
+                                
+                                Text("저장")
+                                    .foregroundColor(.white)
+                            }
+                        }
                         
+                        Button {
+                            
+                        } label: {
+                            ZStack {
+                                Capsule()
+                                    .fill(Color.init(white: 0.7))
+                                    .frame(width: 140, height: 45)
+                                
+                                Text("아니오")
+                                    .foregroundColor(.white)
+                            }
+                        }
+                    }
+                    .padding()
                 }
+                Spacer()
+                HStack (spacing:0) {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing:5) {
+                            editorTopToolbar
+                            Divider()
+                                .padding(.horizontal, 5)
+                            editorMidToolbar
+                            Divider()
+                                .padding(.horizontal, 5)
+                            actionButtons
+                        }
+                    }
+                    button(icon: Image("ZSSkeyboard")) {
+                        
+                    }
+                    .padding(.leading, 7)
+                }
+                .frame(height: 50)
                 .padding(.horizontal)
-                
-                VStack {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(lineWidth: 1)
-                            .fill(Color.init(white: 0.8))
-                        editor
-                            
-                    }
-                        
-                }
-                .padding()
-                
-                HStack(spacing:20) {
-                    Button {
-                        
-                    } label: {
-                        ZStack {
-                            Capsule()
-                                .fill(Color.init(white: 0.3))
-                                .frame(width: 140, height: 45)
-                            
-                            Text("저장")
-                                .foregroundColor(.white)
-                        }
-                    }
-                    
-                    Button {
-                        
-                    } label: {
-                        ZStack {
-                            Capsule()
-                                .fill(Color.init(white: 0.7))
-                                .frame(width: 140, height: 45)
-                            
-                            Text("아니오")
-                                .foregroundColor(.white)
-                        }
-                    }
-                }
-                .padding()
             }
-            Spacer()
-            HStack (spacing:0) {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing:5) {
-                        editorTopToolbar
-                        Divider()
-                            .padding(.horizontal, 5)
-                        editorMidToolbar
-                        Divider()
-                            .padding(.horizontal, 5)
-                        actionButtons
-                    }
-                }
-                button(icon: Image("ZSSkeyboard")) {
-                    
-                }
-                .padding(.leading, 7)
-            }
-            .frame(height: 50)
-            .padding(.horizontal)
         }
+        
     }
     
     var editor: some View {

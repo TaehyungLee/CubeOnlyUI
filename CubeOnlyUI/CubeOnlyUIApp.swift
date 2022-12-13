@@ -12,6 +12,7 @@ struct CubeOnlyUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(CommonViewModel())
         }
     }
 }
